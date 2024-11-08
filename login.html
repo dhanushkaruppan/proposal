@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="login">
+        <div class="form" id="form">
+             <h2>Login here</h2>
+             <input type="username" name="email" placeholder="Enter Username here"><br>
+             <input type="password" name="" placeholder="Enter Password Here"><br><br>
+             
+             <button class="btn" onclick="login_alert()"><a href="#">Login</a></button><br>
+
+             <p>New User<br>
+             <button class="btn" onclick="r_openPopup()">Sign up here</button></p>
+             <p>login with</p>
+            
+            <div class="icons">
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>       
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+        </div><br>
+        <div class="signup" id="signup">
+            <h2>Signup Here</h2>
+            <input type="fname" name="first name" placeholder="first name"><br>
+            <input type="lname" name="last name" placeholder="last name "><br>
+            <input type="email" name="email" placeholder="Email"><br>
+            <input type="password" name="" placeholder="Password"><br>
+            <input type="cpassword" name="" placeholder="confirm Password"><br><br>
+            <button class="btn" onclick="r_closePopup()"><a href="#">Signup</a></button><br>
+        </div>
+        </div>
+    </div>
+    <script>
+        let l_popup = document.getElementById("form");
+        let r_popup = document.getElementById("signup");
+        function r_openPopup(){
+            l_popup.classList.add("r_open-popup");
+            r_popup.classList.add("r_close-popup");
+        }
+        function r_closePopup(){
+            r_popup.classList.remove("r_close-popup");
+            l_popup.classList.remove("r_open-popup");
+        }
+        function rl_closePopup(){
+            r_popup.classList.remove("r_open-popup");
+            l_popup.classList.remove("open-popup");
+        }
+
+        function login_alert() {
+            alert("login sucessfully!!!");
+            }
+        function signup_alert() {
+            alert("Account created sucessfully !!!");
+            }
+        </script>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>      
+</body>
+</html>
