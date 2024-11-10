@@ -14,10 +14,10 @@
 }
 .form{
     position: absolute;
-    width: 40%;
-    height: 80vh;
+    width: 446px;
+    height: 620px;
     left: 50%;
-    top: 5%;
+    top: 50%;
     padding: 25px;
     background: transparent;
     backdrop-filter: blur(20px);
@@ -29,7 +29,6 @@
     visibility: visible;
     transform: translate(-50%,-50%)scale(1);
     color: #fff;
-    margin-top: 25%;
 }
 @media  screen and (max-width=80%) {
     .form{
@@ -44,11 +43,11 @@
 }
 .signup{
     position: absolute;
-    width: 40%;
-    height: 80vh;
+    width: 446px;
+    height: 620px;
     left: 50%;
     padding: 25px;
-    top: 5%;
+    top: 50%;
     background: transparent;
     backdrop-filter: blur(20px);
     border: 0.px solid rgba(212, 234, 204, 0.5);
@@ -60,7 +59,7 @@
     visibility: hidden;
     transform: translate(-50%,-50%)scale(0.001);
     color: #fff;
-    margin-top: 25%;
+
 }
 .r_close-popup{
     visibility: visible;
